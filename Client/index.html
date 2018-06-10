@@ -14,11 +14,56 @@
           font-family: "Verdana", Geneva, sans-serif;
           font-size: 50px;
         }
+
+        li {
+          color: white;
+          text-align: left;
+          font-family: "Verdana", Geneva, sans-serif;
+          font-size: 20px;
+        }
+
+        input[type=text] {
+          width: 585px;
+          height: 50px;
+          text-align: left;
+          font-family: "Verdana", Geneva, sans-serif;
+          font-size: 20px;
+          border: 5px solid white;
+          padding-left: 5px;
+          background-color: black;
+          color: white;
+        }
+
+        button {
+          width: 600px;
+          height: 50px;
+          text-align: center;
+          font-family: "Verdana", Geneva, sans-serif;
+          font-size: 20px;
+          border: 5px solid white;
+          padding-left: 20px;
+          background-color: black;
+          color: white;
+        }
+
+        .Content-Wrapper {
+          padding-left: 50px;
+        }
+
         </style>
     </head>
       <body>
         <div class="Title">
-          <p><h1>Chat Client</h1></p>
+          <p><h1>Online Game</h1></p>
         </div>
+          <div class="Content-Wrapper">
+            <ul id="events"></ul>
+             <form id="chat-form">
+               <p><input id="main" type="text"></input></p>
+               <p><button id="submit">Say</button></p>
+             </form>
+          </div>
+          <script src="/socket.io/socket.io.js"></script>
+          <script src="Scripts/client.js"></script>
       </body>
   </html>
