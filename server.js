@@ -5,7 +5,7 @@ const socketio = require('socket.io');
 
 const app = express();
 
-const clientPath = `${__dirname}/../client`;
+const clientPath = `${__dirname}`;
 console.log(`Serving static from ${clientPath}`);
 
 app.use(express.static(clientPath));
