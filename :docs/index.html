@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Rock, Paper, Scissors!</title>
+      <style>
+
+        body {
+        background-color: black;
+          }
+
+        h1 {
+        color: white;
+        text-align: center;
+        font-family: "Verdana", Geneva, sans-serif;
+        font-size: 50px;
+          }
+
+        input[type=text] {
+        width: 385px;
+        height: 50px;
+        text-align: left;
+        font-family: "Verdana", Geneva, sans-serif;
+        font-size: 20px;
+        border: 5px solid white;
+        padding-left: 5px;
+        background-color: black;
+        color: white;
+          }
+
+        button {
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        font-family: "Verdana", Geneva, sans-serif;
+        font-size: 20px;
+        border: 5px solid white;
+        padding-left: 20px;
+        background-color: black;
+        color: white;
+          }
+
+      .Content-Wrapper {
+        padding-left: 10px;
+        border: 5px solid white;
+        width: 425px;
+        height: 810px;
+        padding-top: 25px;
+        margin-right: auto;
+        margin-left: auto;
+          }
+
+      .display {
+        border: 5px solid white;
+        width: 390px;
+        height: 550px;
+        padding-top: 25px;
+        overflow-y: scroll;
+        text-align: center;
+        font-family: "Verdana", Geneva, sans-serif;
+        font-size: 20px;
+        color: white;
+          }
+
+    .RPS {
+      padding-top: 10px;
+    }
+
+      </style>
+    </head>
+    <body>
+      <div class="Title">
+        <p><h1>Rock, Paper, Scissors!</h1></p>
+      </div>
+      <div class="Content-Wrapper" align="center">
+      <div class="display">
+        <ul id="events"></ul>
+          </div>
+          <div class="RPS">
+            <button style="width: 133px">Rock</button>
+            <button style="width: 133px">Paper</button>
+            <button style="width: 133px">Scissors</button>
+          </div>
+            <div class="form-section">
+         <form id="chat-form">
+           <p><input id="main" type="text"></input></p>
+           <p><button id="submit">Say</button></p>
+         </form>
+      </div>
+    </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="Scripts/client.js"></script>
+    </body>
+  </html>
